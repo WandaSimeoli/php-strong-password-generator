@@ -1,5 +1,5 @@
 <?php
-include 'functions.php';
+require __DIR__ . '/partials/functions.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +19,7 @@ include 'functions.php';
             Inserisci la lunghezza della password
         </label> 
         <div>
-        <input type="number" name="password-length" id="password" class="mb-3 border border-danger">
+        <input type="number" name="password-length" min="2" max="12" id="password" class="mb-3 border border-danger">
         </div>
         <button type="submit" class="btn btn-danger">Invia</button>
     </form>
